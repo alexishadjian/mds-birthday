@@ -1,0 +1,12 @@
+@import '@/styles/variables';
+
+.illustration {
+    position: relative;
+    flex-grow: 1;
+    box-shadow: -8px 8px 0px $pink, -8px 8px 0px 2px $black;
+    border-radius: 14px;
+    border: 2px solid $black;
+    img {
+        padding: 30px;
+    }
+}
