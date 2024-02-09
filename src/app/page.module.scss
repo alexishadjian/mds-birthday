@@ -1,0 +1,17 @@
+@import '@/styles/variables';
+
+
+.container {
+    min-height: calc(100vh - 94px);
+    .left {
+        background-color: $pink;
+        padding: 30px;
+        border-right: 2px solid $black;
+    }
+    .right {
+        display: flex;
+        flex-flow: column;
+        gap: 50px;
+        padding: 45px;
+    }
+}
