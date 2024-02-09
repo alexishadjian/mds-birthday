@@ -1,7 +1,8 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
+import localFont from 'next/font/local'
+const myFont = localFont({ src: 'assets/fonts/bison.ttf' })
 
-const inter = Inter({ subsets: ["latin"] });
+import "../styles/global.scss";
+
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={myFont.className}>{children}</body>
     </html>
   );
 }
